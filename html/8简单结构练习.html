@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var res = []
+        var flag = false;
+        for(var i = 0;i<data.length;i++){
+            for(var j = 0;j<res.length;j++){
+                if(data[i].type_two==res[j].type_two){
+                    flag = true;
+                    break;
+                }
+                else{
+                    flag = false;
+                }
+            }
+
+            if(!flag){
+                res.push({
+                    type_two:data[i].type_two,
+                    list:[],
+
+                });
+            }
+        }
+        console.log(res);
+    </script>
+</body>
+</html>

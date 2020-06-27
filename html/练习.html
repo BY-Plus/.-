@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,3,4,5]
+        var res = [1]
+        var flag=false
+
+        for(var i = 0;i<arr.length;i++){
+            for(var j = 0;j<=res.length;j++){
+                if(arr[i]==res[j]){
+                    flag=true;
+                    break
+                }
+                else{
+                flag=false
+            }
+               
+        }
+               
+            if(!flag){
+                res.push(arr[i])
+            }
+        }
+        console.log(res)
+    </script>
+</body>
+</html>
